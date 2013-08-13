@@ -12,6 +12,7 @@ Show your recently uploaded, liked, or popular Instagram photos in your sidebar 
 == Description ==
 
 Connect and display your Instagram photos in your sidebar with ease. Just go to setting page and connect with your Instagram account. It comes with 4 options:
+
 * Recently uploaded
 * Self feed (from your following)
 * Liked photos
@@ -39,14 +40,14 @@ Connect and display your Instagram photos in your sidebar with ease. Just go to 
 
 == Installation ==
 
-Before you can use this plugin, you have to register your own application to get `Client ID` and `Client Secret`: [Register Instaram Application](http://instagram.com/developer/clients/manage/)
+Before you can use this plugin, you have to register your own application to get `Client ID` and `Client Secret`: [Register Instagram Application](http://instagram.com/developer/clients/manage/)
 
 1. Download and extract the .zip file
-2. Upload the 'tokokoo-instagram' folder to the `/wp-content/plugins/` directory
+2. Upload the `tokokoo-instagram` folder to the `/wp-content/plugins/` directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. Go to 'Settings -> Tokokoo Instagram', and fill in your `Client ID` and `Client Secret`
 5. Save the settings
-6. Connect your account by clicking *Sign in with Instagram*
+6. Connect your account by clicking **Sign in with Instagram**
 3. Go to the widgets page and activate the widget
 
 == Screenshots ==
