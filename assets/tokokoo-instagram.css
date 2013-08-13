@@ -1,0 +1,47 @@
+/*--------------------------------------------------------------------*/
+/*  Tokokoo Instagram Widget Style
+/*--------------------------------------------------------------------*/
+.tokokoo-instagram-wrapper {
+	overflow: hidden;
+}
+
+.tokokoo-instagram-image {
+	background: url(images/bean-instagram.png) #3F729B no-repeat 50% 50%;
+	float: left;
+	margin: 0 7px 7px 0;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+}
+
+.tokokoo-instagram-image a {
+	float: left;
+	position: relative;
+	-webkit-transition: all 0.15s;
+	   -moz-transition: all 0.15s;
+		-ms-transition: all 0.15s;
+		 -o-transition: all 0.15s;
+			transition: all 0.15s;
+}
+
+.tokokoo-instagram-image a:hover {
+	opacity: .2;
+}
+
+.tokokoo-instagram-image img {
+	float: left;
+	height: 62px;
+	width: 62px;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 192dpi) {	
+	.tokokoo-instagram-image {
+		background-image: url(images/bean-instagram@2x.png);
+		background-size: 16px 16px;
+	}
+}
