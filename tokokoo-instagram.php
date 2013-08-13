@@ -97,7 +97,7 @@ class Tokokoo_Instagram {
 	 * @param string $code - the code received from Instagram
 	 * @since 0.1
 	 */
-	 public function get_access_token( $code ) {
+	 public static function get_access_token( $code ) {
 	 	$settings = get_option( 'tokokoo-instagram' );
 	 	
 	 	$args = array(
@@ -121,7 +121,7 @@ class Tokokoo_Instagram {
 		
 		/* Update the plugin settings with the new access token received */
 		$settings['access_token'] = $result['access_token'];
--		$settings['user_id'] = $result['user']['id'];
+		$settings['user_id'] = $result['user']['id'];
 		update_option( 'tokokoo-instagram', $settings );		
 	 }
 	 
@@ -132,7 +132,7 @@ class Tokokoo_Instagram {
 	 *
 	 * @since 0.1
 	 */
-	 public function get_user_profile() {
+	 public static function get_user_profile() {
 	 	$settings = get_option( 'tokokoo-instagram' );
 		$url = add_query_arg( 'access_token', $settings['access_token'], 'https://api.instagram.com/v1/users/' . $settings['user_id'] );
 		
