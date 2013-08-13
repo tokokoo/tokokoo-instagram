@@ -90,7 +90,7 @@ function tokokoo_instagram_secret_section_callback() {
  * @since 0.1
  */
 function tokokoo_instagram_setting_page(){
-	if( $_GET['code'] ) {
+	if( isset( $_GET['code'] ) ) {
 		$get_access_token = Tokokoo_Instagram::get_access_token( $_GET['code'] );
 	}
 	
@@ -101,23 +101,23 @@ function tokokoo_instagram_setting_page(){
 	<div class="wrap">
 		<div id="icon-options-general" class="icon32"><br/></div><h2><?php _e( 'Tokokoo Instagram Settings', 'koo-instagram' ); ?></h2>
 			
-		<?php if( isset( $get_access_token->code ) && $get_access_token->code != 200 ) : ?>
+		<?php if( isset( $get_access_token['code'] ) && $get_access_token['code'] != 200 ) : ?>
 			
 			<div class="error settings-error">
-				<p><strong><?php echo $get_access_token->code . ' : ' . $get_access_token->error_type; ?></strong></p>
-				<p><?php echo $get_access_token->error_message; ?></p>
+				<p><strong><?php echo $get_access_token['code'] . ' : ' . $get_access_token['error_type']; ?></strong></p>
+				<p><?php echo $get_access_token['error_message']; ?></p>
 			</div>
 			
 		<?php endif; ?>
 			
-		<?php if( $user_profile->meta->code == 200 ): ?>
+		<?php if( isset( $user_profile['meta'] ) && $user_profile['meta']['code'] == 200 ): ?>
 			
 			<div class="updated settings-error" style="overflow:hidden">
-				<p><img src="<?php echo $user_profile->data->profile_picture; ?>" class="alignleft" width="48" height="48" alt="<?php $user_profile->data->full_name; ?>" style="margin-right:10px"> <?php _e( 'You are currently signed in as', 'koo-instagram' ); ?> <strong><?php echo $user_profile->data->full_name; ?> <em>( <?php echo $user_profile->data->username; ?> )</em></strong>.</p>
-				<p><a href="http://instagram.com/<?php echo $user_profile->data->username; ?>"><em><?php _e( 'Instagram Profile', 'koo-instagram' ); ?> &rarr;</em></a></p>
+				<p><img src="<?php echo $user_profile['data']['profile_picture']; ?>" class="alignleft" width="48" height="48" alt="<?php $user_profile['data']['full_name']; ?>" style="margin-right:10px"> <?php _e( 'You are currently signed in as', 'koo-instagram' ); ?> <strong><?php echo $user_profile['data']['full_name']; ?> <em>( <?php echo $user_profile['data']['username']; ?> )</em></strong>.</p>
+				<p><a href="http://instagram.com/<?php echo $user_profile['data']['username']; ?>"><em><?php _e( 'Instagram Profile', 'koo-instagram' ); ?> &rarr;</em></a></p>
 			</div>
 			
-		<?php elseif( !$_GET['code'] && $settings['client_id'] != '' || ( isset( $get_access_token->code ) && $get_access_token->code != 200 ) ) :
+		<?php elseif( !isset( $_GET['code'] ) && $settings['client_id'] != '' || ( isset( $get_access_token['code'] ) && $get_access_token['code'] != 200 ) ) :
 			$callback_url = urlencode( admin_url( 'options-general.php?page=tokokoo-instagram' ) );
 			$authorization_url = 'https://api.instagram.com/oauth/authorize/?client_id=' . $settings['client_id'] . '&amp;redirect_uri=' . $callback_url . '&amp;response_type=code';
 		?>

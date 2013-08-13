@@ -115,13 +115,13 @@ class Tokokoo_Instagram {
 		$response = wp_remote_post( 'https://api.instagram.com/oauth/access_token', $args );
 		
 		if ( is_wp_error( $response ) || 200 != $response['response']['code'] )
-			return json_decode( $response['body'] );
+			return json_decode( $response['body'], true );
 		
-		$result = json_decode( $response['body'] );
+		$result = json_decode( $response['body'], true );
 		
 		/* Update the plugin settings with the new access token received */
-		$settings['access_token'] = $result->access_token;
-		$settings['user_id'] = $result->user->id;
+		$settings['access_token'] = $result['access_token'];
+-		$settings['user_id'] = $result['user']['id'];
 		update_option( 'tokokoo-instagram', $settings );		
 	 }
 	 
@@ -141,7 +141,7 @@ class Tokokoo_Instagram {
 		if ( is_wp_error( $response ) || 200 != $response['response']['code'] )
 			return $response['response'];
 		
-		$result = json_decode( $response['body'] );
+		$result = json_decode( $response['body'], true );
 		return $result;
 	 }
 }
