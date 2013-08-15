@@ -63,7 +63,7 @@ function tokokoo_instagram_field_text( $args ) {
  * @since 0.1
  */
 function tokokoo_instagram_app_section_callback() {
-	echo '<p>'. sprintf( __( 'Before you can use this plugin, you have to <a href="%1$s">Register your Application</a> to get Cliend ID and Client Secret. When registering your application, use the following callback URI: <code>%2$s</code>', 'koo-instagram' ), 'http://instagram.com/developer/clients/manage/', admin_url( 'options-general.php?page=tokokoo-instagram' ) ) . '</p>';
+	echo '<p>'. sprintf( __( 'Before you can use this plugin, you have to <a href="%1$s">Register your Application</a> to get Cliend ID and Client Secret. When registering your application, use the following OAuth redirect_uri: <code>%2$s</code>', 'koo-instagram' ), 'http://instagram.com/developer/clients/manage/', admin_url( 'options-general.php?page=tokokoo-instagram' ) ) . '</p>';
 }
 
 /**
