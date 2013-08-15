@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tokokoo Instagram 0.1\n"
+"POT-Creation-Date: 2013-08-15 16:08+0700\n"
+"PO-Revision-Date: 2013-08-15 16:08+0700\n"
+"Last-Translator: M.Satrya <satrya@tokokoo.com>\n"
+"Language-Team: Tokokoo <satrya@tokokoo.com>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../tokokoo-instagram.php:82
+msgid "Tokokoo Instagram"
+msgstr ""
+
+#: ../includes/setting-page.php:15
+msgid "Application Setting"
+msgstr ""
+
+#: ../includes/setting-page.php:16
+msgid "Client ID"
+msgstr ""
+
+#: ../includes/setting-page.php:20
+msgid "Client Secret"
+msgstr ""
+
+#: ../includes/setting-page.php:26
+msgid "Misc Setting"
+msgstr ""
+
+#: ../includes/setting-page.php:27
+msgid "No result text"
+msgstr ""
+
+#: ../includes/setting-page.php:33
+msgid "Your Access Token"
+msgstr ""
+
+#: ../includes/setting-page.php:34
+msgid "Access Token"
+msgstr ""
+
+#: ../includes/setting-page.php:39
+msgid "User ID"
+msgstr ""
+
+#: ../includes/setting-page.php:66
+#, php-format
+msgid ""
+"Before you can use this plugin, you have to <a href=\"%1$s\">Register your "
+"Application</a> to get Cliend ID and Client Secret. When registering your "
+"application, use the following callback URI: <code>%2$s</code>"
+msgstr ""
+
+#: ../includes/setting-page.php:75
+msgid "Misc. settings for the widget."
+msgstr ""
+
+#: ../includes/setting-page.php:84
+msgid "Here is your access token. Keep it yours and use with care."
+msgstr ""
+
+#: ../includes/setting-page.php:102
+msgid "Tokokoo Instagram Settings"
+msgstr ""
+
+#: ../includes/setting-page.php:116
+msgid "You are currently signed in as"
+msgstr ""
+
+#: ../includes/setting-page.php:117
+msgid "Instagram Profile"
+msgstr ""
+
+#: ../includes/setting-page.php:126
+msgid ""
+"You have not connect your Instagram Account or your access token is expired. "
+"Make sure the <strong>Client ID</strong> and <strong>Client Secret</strong> "
+"is correct to your application and click the following button."
+msgstr ""
+
+#: ../includes/widget-tokokoo-instagram.php:18
+msgid "Show Instagram photos in your sidebar easily."
+msgstr ""
+
+#: ../includes/widget-tokokoo-instagram.php:27
+msgid "&raquo; Tokokoo Instagram"
+msgstr ""
+
+#: ../includes/widget-tokokoo-instagram.php:42
+msgid "There is no images found."
+msgstr ""
+
+#: ../includes/widget-tokokoo-instagram.php:123
+msgid "Title:"
+msgstr ""
+
+#: ../includes/widget-tokokoo-instagram.php:127
+msgid "Show Feed:"
+msgstr ""
+
+#: ../includes/widget-tokokoo-instagram.php:129
+msgid "Recent Uploads"
+msgstr ""
+
+#: ../includes/widget-tokokoo-instagram.php:130
+msgid "Following"
+msgstr ""
+
+#: ../includes/widget-tokokoo-instagram.php:131
+msgid "Liked Images"
+msgstr ""
+
+#: ../includes/widget-tokokoo-instagram.php:132
+msgid "Popular Images"
+msgstr ""
+
+#: ../includes/widget-tokokoo-instagram.php:136
+msgid "Counts:"
+msgstr ""

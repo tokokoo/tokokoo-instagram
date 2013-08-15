@@ -1,6 +1,6 @@
 === Plugin Name ===
-Contributors: tokokoo, hirizh
-Tags: instagram, instagram widget, widget, widgets, sidebar, transient api, multiple widgets
+Contributors: tokokoo, hirizh, satrya
+Tags: instagram, instagram widget, widget, widgets, sidebar, multiple widgets
 Requires at least: 3.3
 Tested up to: 3.6
 Stable tag: 0.1
@@ -18,16 +18,13 @@ Connect and display your Instagram photos in your sidebar with ease. Just go to 
 * Liked photos
 * Popular photos
 
-
 = Features Include: =
 
 * Connect with your Instagram account easily
 * 4 options to display photos
 * Specify how many photos you want to display
 * Without javascript library
-* Transients API with cache life timer
 * Multiple widgets
-* Comes pre-styled, but comes proper CSS IDs and Classes to make it match your site
 
 = Support: =
 1. [Support forum](http://wordpress.org/support/plugin/tokokoo-instagram)
